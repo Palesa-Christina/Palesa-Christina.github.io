@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChrisTech | IT Support & Canva Designer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        h1 {
+            color: #1f4e79;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .tagline {
+            color: #666;
+            font-size: 1.2em;
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .service-item {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            transition: all 0.3s ease;
+        }
+
+        .service-item:hover {
+            background: #667eea;
+            color: white;
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .portfolio-item {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .portfolio-item p {
+            padding: 15px;
+            text-align: center;
+            font-weight: 600;
+            color: #1f4e79;
+        }
+
+        .contact-box {
+            background: #1f4e79;
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        .contact-box p {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        .contact-box a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .contact-box a:hover {
+            color: #fff;
+        }
+
+        .emoji {
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .service-grid,
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>ChrisTech — IT Support & Canva Designer</h1>
+            <p class="tagline">Reliable IT support and clean, professional Canva designs for students, small businesses, and organizations.</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="emoji">🧰</span> IT Support Services</h2>
+            <div class="service-grid">
+                <div class="service-item">Remote troubleshooting</div>
+                <div class="service-item">Email & software setup</div>
+                <div class="service-item">Document and PDF issues</div>
+                <div class="service-item">System cleanup and organization</div>
+                <div class="service-item">Beginner-friendly tech assistance</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><span class="emoji">🎨</span> Canva Design Services</h2>
+            <div class="service-grid">
+                <div class="service-item">Posters & Flyers</div>
+                <div class="service-item">Social media graphics</div>
+                <div class="service-item">Event promotions</div>
+                <div class="service-item">Editable Canva templates</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><span class="emoji">📂</span> Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="images/design1.png" alt="Design 1">
+                    <p>Event Flyer</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/design2.png" alt="Design 2">
+                    <p>Promotional Design</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/design3.png" alt="Design 3">
+                    <p>Social Media Graphic</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/design4.png" alt="Design 4">
+                    <p>Custom Poster</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/design5.png" alt="Design 5">
+                    <p>Business Flyer</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/design6.jpg" alt="Design 6">
+                    <p>Event Invitation</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/design7.png" alt="Design 7">
+                    <p>Marketing Material</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/design8.png" alt="Design 8">
+                    <p>Brand Design</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/design9.png" alt="Design 9">
+                    <p>Creative Layout</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/design10.jpg" alt="Design 10">
+                    <p>Special Event Poster</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/design11.png" alt="Design 11">
+                    <p>Professional Template</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><span class="emoji">📞</span> Contact</h2>
+            <div class="contact-box">
+                <p><strong>Email:</strong> <a href="mailto:christech@gmail.com">christech@gmail.com</a></p>
+                <p><strong>Fiverr:</strong> <a href="#">Coming soon</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
